@@ -2,5 +2,6 @@ node_modules/
 
 archive
 .ipynb_checkpoints
+.next/
 
 *.csv
