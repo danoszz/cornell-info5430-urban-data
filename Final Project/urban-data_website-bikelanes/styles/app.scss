@@ -1,0 +1,79 @@
+
+:root {
+  --magicNumber: 64px;
+  --green: #40ff00;
+  --typoSmall: 14px;
+  --typoMedium: 20px;
+  --goldenRatio: 1.618;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: calc(var(--typoMedium) * 1.5);
+  margin-bottom: calc(var(--typoMedium) / 4);
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+p,
+p a,
+a,
+ul li,
+ol li {
+  font-size: var(--typoMedium);
+  line-height: 1.8;
+  font-weight: 300;
+}
+quote {
+  font-style: italic;
+}
+ul,
+ol {
+  padding-left: calc(var(--typoMedium) * 1.5);
+  li {
+    padding-left: var(--typoMedium);
+    margin-bottom: calc(var(--typoMedium) / 2);
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: var(--green);
+  }
+}
+
+code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}

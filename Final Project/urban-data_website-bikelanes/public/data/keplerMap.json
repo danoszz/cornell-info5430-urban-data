@@ -1,0 +1,294 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [],
+      "layers": [
+        {
+          "id": "6vrs1b",
+          "type": "point",
+          "config": {
+            "dataId": "bws22twu",
+            "label": "Point",
+            "color": [246, 209, 138],
+            "highlightColor": [252, 242, 26, 255],
+            "columns": {
+              "lat": "Latitude",
+              "lng": "Longitude",
+              "altitude": null
+            },
+            "isVisible": true,
+            "visConfig": {
+              "radius": 10,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "strokeColor": null,
+              "colorRange": {
+                "name": "Custom Palette",
+                "type": "custom",
+                "category": "Custom",
+                "colors": [
+                  "#19681e",
+                  "#0c9014",
+                  "#00c73c",
+                  "#79e31c",
+                  "#bff10e",
+                  "#fff900"
+                ]
+              },
+              "strokeColorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radiusRange": [0, 50],
+              "filled": true
+            },
+            "hidden": false,
+            "textLabel": [
+              {
+                "field": null,
+                "color": [255, 255, 255],
+                "size": 18,
+                "offset": [0, 0],
+                "anchor": "start",
+                "alignment": "center"
+              }
+            ]
+          },
+          "visualChannels": {
+            "colorField": { "name": "Borough", "type": "string" },
+            "colorScale": "ordinal",
+            "strokeColorField": null,
+            "strokeColorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "fhudpie",
+          "type": "geojson",
+          "config": {
+            "dataId": "bws22twu",
+            "label": "LinkNYC_Locations (1)",
+            "color": [183, 136, 94],
+            "highlightColor": [252, 242, 26, 255],
+            "columns": { "geojson": "Location" },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "strokeOpacity": 0.8,
+              "thickness": 0.5,
+              "strokeColor": null,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "strokeColorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radius": 10,
+              "sizeRange": [0, 10],
+              "radiusRange": [0, 50],
+              "heightRange": [0, 500],
+              "elevationScale": 5,
+              "enableElevationZoomFactor": true,
+              "stroked": true,
+              "filled": false,
+              "enable3d": false,
+              "wireframe": false
+            },
+            "hidden": false,
+            "textLabel": [
+              {
+                "field": null,
+                "color": [255, 255, 255],
+                "size": 18,
+                "offset": [0, 0],
+                "anchor": "start",
+                "alignment": "center"
+              }
+            ]
+          },
+          "visualChannels": {
+            "colorField": null,
+            "colorScale": "quantile",
+            "strokeColorField": null,
+            "strokeColorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "hdpvfif",
+          "type": "geojson",
+          "config": {
+            "dataId": "x9jtq6o6",
+            "label": "Subway Lines",
+            "color": [255, 203, 153],
+            "highlightColor": [252, 242, 26, 255],
+            "columns": { "geojson": "_geojson" },
+            "isVisible": true,
+            "visConfig": {
+              "opacity": 0.8,
+              "strokeOpacity": 0.8,
+              "thickness": 0.3,
+              "strokeColor": [205, 201, 191],
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "strokeColorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radius": 10,
+              "sizeRange": [0, 10],
+              "radiusRange": [0, 50],
+              "heightRange": [0, 500],
+              "elevationScale": 5,
+              "enableElevationZoomFactor": true,
+              "stroked": true,
+              "filled": false,
+              "enable3d": false,
+              "wireframe": false
+            },
+            "hidden": false,
+            "textLabel": [
+              {
+                "field": null,
+                "color": [255, 255, 255],
+                "size": 18,
+                "offset": [0, 0],
+                "anchor": "start",
+                "alignment": "center"
+              }
+            ]
+          },
+          "visualChannels": {
+            "colorField": null,
+            "colorScale": "quantile",
+            "strokeColorField": null,
+            "strokeColorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "x9jtq6o6": [
+              { "name": "name", "format": null },
+              { "name": "rt_symbol", "format": null }
+            ],
+            "bws22twu": [
+              { "name": "Borough", "format": null },
+              { "name": "Project Status", "format": null },
+              { "name": "Cross Street 1", "format": null },
+              { "name": "Cross Street 2", "format": null },
+              { "name": "IxN Corner", "format": null },
+              { "name": "Location", "format": null }
+            ]
+          },
+          "compareMode": false,
+          "compareType": "absolute",
+          "enabled": true
+        },
+        "brush": { "size": 3.4, "enabled": false },
+        "geocoder": { "enabled": false },
+        "coordinate": { "enabled": false }
+      },
+      "layerBlending": "normal",
+      "splitMaps": [],
+      "animationConfig": { "currentTime": null, "speed": 1 }
+    },
+    "mapState": {
+      "bearing": 2.875000000000001,
+      "dragRotate": true,
+      "latitude": 40.732120621759556,
+      "longitude": -73.95843231284859,
+      "pitch": 55.225095090064094,
+      "zoom": 11.113023130115838,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "onoo93u",
+      "topLayerGroups": {},
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "building": true,
+        "water": true
+      },
+      "threeDBuildingColor": [
+        194.6103322548211, 191.81688250953655, 185.2988331038727
+      ],
+      "mapStyles": {
+        "onoo93u": {
+          "accessToken": "pk.eyJ1IjoiZGFhbnZhbmRlcnp3YWFnIiwiYSI6ImNrdHVhOXBpMDF5YzAybm1oM3gzbTBmYWMifQ.CW1kG74nME-J1VZNULhrWw",
+          "custom": true,
+          "icon": "https://api.mapbox.com/styles/v1/daanvanderzwaag/cktupvbr41j0x17pb0cz0awwp/static/-122.3391,37.7922,9,0,0/400x300?access_token=pk.eyJ1IjoiZGFhbnZhbmRlcnp3YWFnIiwiYSI6ImNrdHVhOXBpMDF5YzAybm1oM3gzbTBmYWMifQ.CW1kG74nME-J1VZNULhrWw&logo=false&attribution=false",
+          "id": "onoo93u",
+          "label": "Monochrome",
+          "url": "mapbox://styles/daanvanderzwaag/cktupvbr41j0x17pb0cz0awwp"
+        }
+      }
+    }
+  }
+}

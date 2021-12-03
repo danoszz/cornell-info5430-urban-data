@@ -1,0 +1,21 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "d3": "^7.0.1",
+    "d3-array": "^3.0.2",
+    "d3-axis": "^3.0.0",
+    "d3-fetch": "^3.0.1",
+    "d3-scale": "^4.0.0",
+    "next": "^11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.42.0"
+  }
+}

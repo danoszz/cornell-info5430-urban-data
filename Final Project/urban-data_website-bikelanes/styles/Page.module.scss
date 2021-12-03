@@ -1,0 +1,131 @@
+@import "./mixins.scss";
+
+#datavizFrame {
+  width: calc(100vw - var(--magicNumber));
+  height: calc(100vh - var(--magicNumber) * 3);
+
+  margin-top: var(--magicNumber);
+  margin-left: calc(var(--magicNumber) / 2);
+  border: none;
+  background-color: #242424;
+
+  &:focus {
+    outline: var(--green);
+  }
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: calc(var(--magicNumber) / 2);
+}
+
+.title {
+  text-align: left;
+  font-size: 6vw;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: -0.06vw;
+}
+
+.description {
+  font-size: 2.2vw;
+}
+
+.articleHeader {
+  align-items: baseline;
+  padding-bottom: calc(var(--magicNumber) / 3);
+  border-bottom: 1px solid white;
+
+  @include gridReverse();
+}
+
+.articleBody {
+  @include grid();
+  padding: calc(var(--magicNumber) / 2);
+
+  h3,
+  p,
+  .contentBlock {
+    grid-column: 2;
+    padding-right: var(--magicNumber);
+  }
+  p a {
+    // text-decoration: underline;
+    color: var(--green);
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  p:nth-child(1),
+  p:nth-child(1) a {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  pre {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 0 12px;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.articleClosing {
+  grid-column: 2;
+  ul {
+    margin: calc(var(--magicNumber) * 2) 0;
+    padding: 0;
+  }
+  li {
+    font-size: var(--typoSmall);
+    margin: 0;
+    padding: calc(var(--magicNumber) / 12) 0;
+    list-style: none;
+    border-top: 1px solid white;
+
+    &:last-child {
+      border-bottom: 1px solid white;
+    }
+    a {
+      font-size: var(--typoSmall);
+    }
+  }
+}
+
+.callout {
+  // background-color: var(--green);
+  // color: black;
+  border: 1px solid var(--green);
+  margin-right: calc(var(--magicNumber) / 2);
+  color: var(--green);
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 125%;
+  border-radius: 4px;
+  padding: calc(var(--magicNumber) / 2);
+}
+.contentBlock {
+  margin-top: calc(var(--magicNumber) / 2);
+
+  figcaption,
+  figcaption a {
+    font-size: var(--typoSmall);
+    opacity: 0.5;
+    margin-top: calc(var(--magicNumber) / 4);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

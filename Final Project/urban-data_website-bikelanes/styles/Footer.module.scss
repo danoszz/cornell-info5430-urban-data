@@ -1,0 +1,36 @@
+@import "./mixins.scss";
+
+.footer {
+  padding: calc(var(--magicNumber) / 2);
+  border-top: 1px solid #494949;
+  width: 100%;
+  @include grid();
+
+  a {
+    font-size: var(--typoSmall);
+  }
+
+  a:nth-child(1) {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      color: white;
+    }
+  }
+  a span {
+    margin-left: 4px;
+  }
+
+  div {
+    @include grid();
+  }
+}
+
+.links {
+  a:nth-child(1) {
+    color: var(--green);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

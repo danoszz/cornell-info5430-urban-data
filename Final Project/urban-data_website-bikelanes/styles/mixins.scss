@@ -1,0 +1,27 @@
+@mixin grid() {
+
+  $goldenRatio: 1.61803398875;
+  $rightCol: calc(100 / $goldenRatio) * 1%;
+
+  display: grid;
+  grid-template-columns: 1fr $rightCol;
+  column-gap: var(--magicNumber);
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin gridReverse() {
+  
+  $goldenRatio: 1.61803398875;
+  $leftCol: calc(100 / $goldenRatio) * 1%;
+
+  display: grid;
+  grid-template-columns: $leftCol 1fr;
+  column-gap: var(--magicNumber);
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}

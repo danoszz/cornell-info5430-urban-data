@@ -1,0 +1,27 @@
+@import "./mixins.scss";
+
+.header {
+  padding: 0 calc(var(--magicNumber) / 2);
+  height: calc(var(--magicNumber) / 1.5);
+  border-bottom: 1px solid #ffffff;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  mix-blend-mode: difference;
+  z-index: 1;
+
+  @include grid();
+  justify-content: center;
+  a,
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: var(--typoSmall);
+  }
+
+  div {
+    @include grid();
+  }
+}
