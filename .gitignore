@@ -1,3 +1,6 @@
-.archive
-.ipyn_checkpoints
+node_modules/
+
+archive
+.ipynb_checkpoints
+
 *.csv
