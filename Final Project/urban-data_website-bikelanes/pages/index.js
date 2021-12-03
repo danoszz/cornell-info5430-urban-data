@@ -10,7 +10,7 @@ import imageDataTable from "../public/a2-data-table.png"
 export default function SoftSystems() {
 
   const title = "Bikelanes from Amsterdam to New York City"
-  const subtitle = "Urban Data"
+  const subtitle = "INFO5410 Urban Data"
   const project = "Final Project"
   const authors = "LK545 & DV239"
   const date = "031221"
@@ -276,13 +276,10 @@ export default function SoftSystems() {
             </p>
             <div className={styles.articleClosing}>
               <ul>
-                <li>Daan van der Zwaag</li>
-                <li>
-                  <a href="mailto:dv239@cornell.edu">dv239@cornell.edu</a>
-                </li>
-                <li>25th of October 2021</li>
-                <li>Assignment 2: Soft Systems</li>
-                <li>INFO5410 Urban Systems by Michael Samuelian</li>
+                <li>Lars Kouwenhoven (<a href="mailto:lk545@cornell.edu">lk545@cornell.edu</a>)</li>
+                <li>Daan van der Zwaag (<a href="mailto:dv239@cornell.edu">dv239@cornell.edu</a>)</li>
+                <li>3rd of December 2021</li>
+                <li>{project} {subtitle} by Emma Pierson</li>
                 <li>
                   Dual MS Urban Tech at Jacobs Technion-Cornell Institute, New
                   York City
@@ -295,6 +292,7 @@ export default function SoftSystems() {
 
       <Footer
         showlinks
+        timezone={timezone}
         loomLink="https://www.loom.com/share/c13a4203305944ed8353d0b466bcd910"
       />
     </div>

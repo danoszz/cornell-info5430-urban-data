@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../styles/Footer.module.scss"
 
-const Footer = ({ showlinks, loomLink }) => {
+const Footer = ({ showlinks, loomLink, timezone }) => {
   return (
     <footer className={styles.footer}>
       <a
@@ -10,7 +10,7 @@ const Footer = ({ showlinks, loomLink }) => {
         rel="noopener noreferrer"
       >
         © Daan van der Zwaag, 2021 — No tracking policy — All data belongs to
-        their respective owners
+        their respective owners, {timezone}
       </a>
       {showlinks && (
         <div>
