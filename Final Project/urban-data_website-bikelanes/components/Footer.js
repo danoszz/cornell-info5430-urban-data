@@ -14,16 +14,16 @@ const Footer = ({ showlinks, loomLink, timezone }) => {
       </a>
       {showlinks && (
         <div>
-          <a
+          {/* <a
             href={loomLink}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.videoUrl}
           >
             View video on Loom<span>↗</span>
-          </a>
+          </a> */}
           <a
-            href="https://github.com/danoszz/cornell-info5410-urban-systems_dv239"
+            href="https://github.com/danoszz/cornell-info5430-urban-data/tree/main/Final%20Project/urban-data_website-bikelanes"
             target="_blank"
             rel="noopener noreferrer"
           >
