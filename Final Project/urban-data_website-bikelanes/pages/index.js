@@ -43,16 +43,15 @@ export default function SoftSystems() {
             </h1>
             {/* <p className={styles.description}>{subtitle}</p> */}
           </header>
-
           <article className={styles.articleBody}>
+          <p>
+              Work in Progress - Estimate delivery 12/10/21
+            </p>
+          </article>
+
+          {/* <article className={styles.articleBody}>
             <p>
-              After moving to New York this year, I wondered what the most
-              affordable location in New York is while staying within my student
-              budget and close to the F-Train. While this might seem like a
-              tedious task and not yet possible, public social-economical data
-              can help map location affordability. This data visualization maps
-              the relation between income and cost of housing in New York City
-              per income group and amount of household members per Census tract.
+              Work in Progress - Estimate delivery 12/10/21
             </p>
             <p>
               To start this process, we first have to find geospatial data
@@ -286,7 +285,7 @@ export default function SoftSystems() {
                 </li>
               </ul>
             </div>
-          </article>
+          </article> */}
         </section>
       </main>
 
